@@ -18,6 +18,12 @@ while True:
         print("INVALID INPUT. ENTER NUMBER")
         continue
 
+    try:
+        c = random.randint(a,b)
+    except ValueError:
+        print("INVALID INPUT. PLEASE ENTER SMALLER NUMBER FIRST")
+        continue
+    
     c = random.randint(a,b)
 
     print("Your random output is " + str(c))
