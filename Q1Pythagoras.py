@@ -1,2 +1,24 @@
-# Create a program that will accept the two legs of a right-angle triangle, a and b, and display the length of the hypotenuse, c. 
-# Remember to use prompts for the input and labels for the output. Use the formula a2 + b2 = c2 to calculate your answer.
+import math
+
+while True:
+
+    a = input("What is the length of side a? ")
+
+    try:
+        a = float(a)
+    except ValueError:
+        print("FUCK OFF. ENTER A NUMBER")
+        continue
+
+    b = input("What is the lenght of side b? ")
+
+    try:
+        b = float(b)
+    except ValueError:
+        print("FUCK OFF. ENTER A NUMBER")
+        continue
+    
+    c = math.sqrt((a**2) + (b**2))
+
+    print("Your hypotenuse is " + str(c))
+    break
