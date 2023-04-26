@@ -7,7 +7,7 @@ while True:
     try:
         a = float(a)
     except ValueError:
-        print("FUCK OFF. ENTER A NUMBER")
+        print("INVALID INPUT. ENTER A NUMBER")
         continue
 
     b = input("What is the lenght of side b? ")
@@ -15,7 +15,7 @@ while True:
     try:
         b = float(b)
     except ValueError:
-        print("FUCK OFF. ENTER A NUMBER")
+        print("INVALID INPUT. ENTER A NUMBER")
         continue
     
     c = math.sqrt((a**2) + (b**2))
